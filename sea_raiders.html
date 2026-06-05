@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Raiders - Gabin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="accueil.html" class="nav-logo">G<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="#description" class="cta">À propos du projet</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="projet-hero">
+    <div class="projet-hero-title">
+      <div class="hero-eyebrow">Projet personnel - Python</div>
+      <h1 class="hero-name projet-hero-name">Sea<br/><span class="line2">Raiders</span></h1>
+      <div class="tags projet-tags-center">
+        <span class="tag">Python</span>
+        <span class="tag">Pygame</span>
+        <span class="tag">POO</span>
+      </div>
+    </div>
+    <img src="assets/img/seaRaiders.png" alt="Sea Raiders gameplay" class="projet-hero-img" />
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section id="description">
+
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Sea Raiders</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="jeu-desc">
+
+      <div class="jeu-block">
+        <h3>Le projet</h3>
+        <p>Sea Raiders est un projet personnel développé en Python avec la librairie Pygame. C'est un jeu du genre Space Invaders, le joueur contrôle un bateau de guerre qui doit repousser des vagues d'ennemis envahissant depuis le haut de l'écran.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Les ennemis</h3>
+        <p>Il existe deux types d'ennemis : les barques (lentes et fragiles) et les frégates qui sont plus résistantes et plus rapides. Chaque type réagit différemment aux capacités du joueur, ce qui force à adapter sa stratégie au fil de la partie.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Le Super</h3>
+        <p>En accumulant des points en tuant des ennemis, le joueur charge une jauge qui lui permet de lancer une flotte d'avions qui traverse l'écran. Les barques sont détruites instantanément, tandis que les frégates sont ralenties et affaiblies par le passage de la flotte.</p>
+        <img src="assets/img/seaRaidersSuper.png" alt="Sea Raiders - utilisation du super" class="jeu-block-img" />
+      </div>
+
+      <div class="jeu-block">
+        <h3>Le Bouclier</h3>
+        <p>Un second gadget permet d'activer temporairement un bouclier autour du bateau. Il absorbe une collision avec un ennemi avant de se désactiver, offrant une seconde chance au joueur dans les moments critiques.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Les choix techniques</h3>
+        <p>Le jeu est entièrement configurable via un fichier config.json : vitesse des ennemis, taux de spawn, recharge des capacités. Ce qui permet d'ajuster la difficulté sans toucher au code. La logique du jeu est séparée en deux fichiers : space.py contient toutes les classes (joueur, ennemis, balles, gadgets) et main.py gère la boucle principale et les états du jeu.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Regard actuel</h3>
+        <p>J'ai créé ce jeu quand j'étais au lycée, avant ma formation en BUT Informatique. En le relisant aujourd'hui, je vois clairement ce que je ferais différemment.</p>
+        <p class="jeu-block-p-gap">D'abord la séparation des fichiers, sur ce projet tout tient en deux fichiers (main.py et space.py). C'est beaucoup trop peu. Aujourd'hui je découperais le projet en plusieurs modules : un pour les ennemis, un pour le joueur, un pour les effets, etc. Ce qui rendrait le code bien plus lisible et maintenable.</p>
+        <p class="jeu-block-p-gap">Ensuite l'exploitation de la POO. À l'époque je savais créer des classes, mais je ne maîtrisais pas l'héritage. Aujourd'hui j'aurais créé une classe abstraite Entite regroupant les attributs communs à tous les objets du jeu comme la position, l'image et la hitbox dont auraient hérité les classes Joueur, Ennemi, Balle etc. Ça aurait évité beaucoup de répétitions et rendu le code plus élégant.</p>
+        <p class="jeu-block-p-gap">Ce projet reste un bon souvenir, mais il illustre bien la progression entre coder par intuition au lycée et structurer proprement un projet après une vraie formation.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Gabin</span>
+    <span>BUT Informatique — IUT de Nantes</span>
+  </footer>
+
+</body>
+</html>

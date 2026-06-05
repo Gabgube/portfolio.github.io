@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEO Survival - Gabin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+  <a href="accueil.html" class="nav-logo">G<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li><a href="#description" class="cta">À propos du jeu</a></li>
+  </ul>
+  </nav>
+
+  <!-- JEU -->
+  <div style="display:flex; justify-content:center; align-items:center; height: calc(100vh - 72px);">
+    <iframe src="https://html-classic.itch.zone/html/17681470/index.html"
+            width="800" height="600"
+            allowfullscreen
+            allow="autoplay; fullscreen; gamepad">
+    </iframe>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section id="description">
+
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">CEO Survival</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="jeu-desc">
+
+      <div class="jeu-block">
+        <h3>Contexte</h3>
+        <p>CEO Survival est un projet universitaire réalisé en 3 semaines, en groupe, dans le cadre de nos cours de gestion et d'économie. L'objectif était de concevoir un jeu vidéo à vocation pédagogique autour d'une thématique issue des domaines étudiés. Nous avions le choix entre plusieurs sujets, ainsi qu'entre Python et Go pour le développement.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Le choix de l'écologie</h3>
+        <p>Parmi les thématiques proposées, nous avons choisi de traiter la question du développement durable en entreprise. Ce n'était pas un choix anodin : l'écologie nous semble être un enjeu majeur de notre génération, et nous voulions que notre projet ait du sens au-delà de la note. Mettre le joueur dans la peau d'un PDG contraint de jongler entre rentabilité, satisfaction des employés et impact environnemental nous semblait être une manière pertinente et ludique d'aborder ces problématiques réelles auxquelles les entreprises font face aujourd'hui.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Les choix techniques</h3>
+        <p>Pour le langage, nous avons naturellement opté pour Go car nous venions de l'aborder en cours. Ce projet était donc l'occasion idéale de le mettre en pratique sur quelque chose de concret plutôt que sur de simples exercices. Pour le moteur de jeu, nous avons utilisé Ebiten, une librairie Go légère et bien documentée, adaptée à notre niveau et à nos ambitions pour ce projet.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Le développement</h3>
+        <p>Le plus difficile au départ n'était pas technique : il fallait trouver un concept de jeu qui nous donne envie de travailler dessus, tout en restant réalisable avec nos compétences et dans les délais impartis. Les premières discussions ont pris du temps, trouver un concept fédérateur dans une équipe, c'est rarement immédiat. Une fois l'idée validée, nous avons organisé le travail en parallèle et synchronisé nos avancées régulièrement pour éviter les conflits et garder une cohérence dans le code.</p>
+        <p style="margin-top: 12px;">Assez vite, nous avons compris qu'il valait mieux viser un jeu simple mais fonctionnel plutôt que de vouloir trop en faire. C'est ce raisonnement qui nous a orientés vers un jeu de gestion au tour par tour, enrichi de 3 mini-jeux pour apporter du dynamisme et éviter que l'expérience ne soit trop monotone.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Ce qu'on en retient</h3>
+        <p>Au-delà du jeu en lui-même, ce projet nous a appris à travailler en équipe sur une base de code commune, à faire des compromis techniques, et à livrer quelque chose de fonctionnel dans un temps contraint.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Gabin</span>
+    <span>BUT Informatique — IUT de Nantes</span>
+  </footer>
+
+</body>
+</html>

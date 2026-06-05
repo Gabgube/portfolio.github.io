@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabin - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">G<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Présentation</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact" class="cta">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-eyebrow">Étudiant BUT Informatique - Nantes</div>
+    <h1 class="hero-name">
+      <div>Gabin</div>
+      <div class="line2">Sezestre</div>
+    </h1>
+    <p class="hero-title">
+      Passionné par le <strong>développement logiciel</strong>, en recherche d'une
+      <strong>alternance</strong> pour ma 2e année de BUT Informatique à Nantes.
+    </p>
+    <div class="hero-actions">
+      <a href="assets/doc/cv.pdf" download target="_blank" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Télécharger mon CV
+      </a>
+      <a href="#projets" class="btn btn-outline">
+        Voir mes projets
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Kotlin</span>
+      <span class="tag">Java</span>
+      <span class="tag">SQL</span>
+      <span class="tag">HTML / CSS</span>
+      <span class="tag">Go</span>
+    </div>
+    </section>
+    <div class="divider"></div>
+        <section id="about">
+      <div class="section-header">
+        <span class="section-num">00</span>
+        <h2 class="section-title">À propos</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Qui suis-je ?</h3>
+          <p>
+            Étudiant en première année de BUT Informatique à l'IUT de Nantes, spécialité développement logiciel. 
+            Titulaire d'un bac général avec les spécialités Mathématiques et NSI, j'ai naturellement orienté 
+            mon parcours vers l'informatique, un domaine qui me passionne depuis plusieurs années.
+          </p>
+          <p>
+            Actuellement à la recherche d'une alternance pour ma deuxième année, je suis motivé à rejoindre 
+            une entreprise où je pourrai mettre en pratique mes compétences tout en continuant à progresser.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+  <!-- PROJETS -->
+  <section id="projets">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Projets</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projets-grid">
+
+      <!-- Professionnel -->
+      <div class="projet-category">
+        <div class="projet-cat-header">
+          <div class="cat-dot pro"></div>
+          <span class="cat-label pro">Professionnel</span>
+          <span class="cat-desc">Stages & Alternances</span>
+        </div>
+        <div class="projets-cards">
+        </div>
+      </div>
+
+      <!-- Personnel -->
+      <div class="projet-category">
+        <div class="projet-cat-header">
+          <div class="cat-dot perso"></div>
+          <span class="cat-label perso">Personnel</span>
+          <span class="cat-desc">Passion</span>
+        </div>
+        <div class="projets-cards">
+          <div class="projet-card">
+            <a href="sea_raiders.html" style="text-decoration: none; color: inherit;">
+            <div class="projet-card-title">Développement d'un mini-jeu</div>
+            <div class="projet-card-desc">Création d'un jeu vidéo type space invader</div>
+            <div class="projet-card-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Pygame</span>
+            </div>
+          </a>
+          </div>
+          <div class="projet-card">
+            <a href="plateforme.html" style="text-decoration: none; color: inherit;">
+            <div class="projet-card-title">Développement d'un mini-jeu</div>
+            <div class="projet-card-desc">Création d'un jeu vidéo type plateforme</div>
+            <div class="projet-card-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Pygame</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Universitaire -->
+      <div class="projet-category">
+        <div class="projet-cat-header">
+          <div class="cat-dot uni"></div>
+          <span class="cat-label uni">Universitaire</span>
+          <span class="cat-desc">BUT Informatique — IUT Nantes</span>
+        </div>
+        <div class="projets-cards">
+          <div class="projet-card">
+            <a href="ceo_survival.html" style="text-decoration: none; color: inherit;">
+            <div class="projet-card-title">Développement d'un jeu vidéo</div>
+            <div class="projet-card-desc">Création d'un "jeu sérieux" sur le développement durable en entreprise</div>
+            <div class="projet-card-stack">
+              <span class="stack-tag">Go</span>
+              <span class="stack-tag">Ebiten</span>
+            </div>
+          </a>
+          </div>
+          <div class="projet-card">
+            <a href="particule.html" style="text-decoration: none; color: inherit;">
+            <div class="projet-card-title">Développement d'un système de particule</div>
+            <div class="projet-card-desc">Création d'un système de particules et optimisations des performances</div>
+            <div class="projet-card-stack">
+              <span class="stack-tag">Go</span>
+              <span class="stack-tag">Ebiten</span>
+            </div>
+          </a>
+          </div>
+          <div class="projet-card">
+            <a href="https://gabgube.github.io/brake.github.io/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="projet-card-title">Création d'un site web marchand fictif</div>
+            <div class="projet-card-desc">Création de 3 pages web lors d'un devoir maison</div>
+            <div class="projet-card-stack">
+              <span class="stack-tag">HTML</span>
+              <span class="stack-tag">CSS</span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <div class="contact-intro">
+          Travaillons<br/><span>ensemble.</span>
+        </div>
+        <p class="contact-sub">
+           À la recherche d'un étudiant pour une alternance en Pays de la Loire ?
+        </p>
+        <p class="contact-sub">
+          N'hésitez pas à me contacter, je suis disponible pour discuter.
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=gabin.sezestre@gmail.com&tf=cm" class="contact-link" target="_blank" >
+          <div class="contact-link-icon mail">
+            <img src="assets/img/arobase.png" alt="mail"
+                 style="width:100%; height:100%; object-fit:contain;" />
+          </div>
+
+          <div class="contact-link-text">
+            <div class="contact-link-label" id="email">
+              gabin.sezestre@gmail.com
+            </div>
+
+            <div class="contact-link-value">
+              Email
+            </div>
+          </div>
+        <div id="message-copie" class="message-copie">
+          Adresse copiée !
+        </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gabin-sezestre-5697b3284/" target="_blank" class="contact-link">
+          <div class="contact-link-icon mail">
+            <img src="assets/img/linkedin.png" alt="mail" style="width:100%; height:100%; object-fit:contain;" />
+          </div>
+          <div class="contact-link-text">
+            <div class="contact-link-label">Profil Gabin Sezestre</div>
+            <div class="contact-link-value">Linkedin</div>
+          </div>
+          <div class="contact-link-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Gabin</span>
+    <span>BUT Informatique — IUT de Nantes</span>
+  </footer>
+
+</body>
+</html>

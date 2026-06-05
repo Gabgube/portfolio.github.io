@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Système de Particules - Gabin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="accueil.html" class="nav-logo">G<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="#description" class="cta">À propos du projet</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO PROJET -->
+  <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height: calc(100vh - 72px); gap: 24px;">
+    <div style="text-align:center;">
+      <div class="hero-eyebrow">Projet universitaire - BUT Informatique</div>
+      <h1 class="hero-name" style="font-size: clamp(40px, 7vw, 80px);">Système de<br/><span class="line2">Particules</span></h1>
+    </div>
+    <img src="assets/img/systeme_base.png" alt="Système de particules de base"
+         style="max-width: 700px; width: 100%; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); border: 1px solid var(--border);" />
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section id="description">
+
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Le projet</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="jeu-desc">
+
+      <div class="jeu-block">
+        <h3>Contexte</h3>
+        <p>Projet universitaire réalisé en 3 semaines, en duo. L'objectif était de développer un système de particules en Go avec Ebiten, puis de l'enrichir progressivement avec des extensions au choix.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Phase 1 - Le système de base</h3>
+        <p>La première partie consistait à créer un système de particules fonctionnel : des particules apparaissent et se déplacent. Simple, mais c'est la fondation sur laquelle tout le reste repose.</p>
+      </div>
+
+      <!-- IMAGES VISUELLES -->
+      <div class="jeu-block">
+        <h3>Phase 2 - Les extensions visuelles</h3>
+        <p>Une fois le système de base stable, nous avons implémenté des extensions de rendu pour améliorer l'aspect graphique. Ces modifications permettent de changer l'apparence des particules et ainsi d'enrichir l'expérience visuelle.</p>
+        <div class="particule-images">
+          <img src="assets/img/systeme_extension_g_1.png" alt="Extension graphique 1" />
+          <img src="assets/img/systeme_extension_g_2.png" alt="Extension graphique 2" />
+        </div>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Phase 3 - Les extensions d'optimisation mémoire</h3>
+        <p>C'est la partie la plus intéressante techniquement. Nous avons implémenté deux optimisations majeures. D'abord, ne plus afficher les particules "mortes" (une particule est considérée morte lorsqu'elle touche le bord de l'écran ou que sa durée de vie est atteinte). Ensuite, réutiliser les particules mortes plutôt que de les supprimer : au lieu de détruire une particule morte et d'en créer une nouvelle, on lui réassigne simplement les caractéristiques d'une nouvelle particule. De nouvelles particules ne sont créées que lorsqu'il n'en reste plus aucune de morte à recycler.</p>
+      </div>
+
+      <!-- IMAGE CONFIG -->
+      <div class="jeu-block">
+        <h3>Configuration via JSON</h3>
+        <p>Toutes les extensions sont activables ou désactivables via un fichier config.json, ce qui permet de tester facilement chaque fonctionnalité indépendamment et de mesurer leur impact.</p>
+        <img src="assets/img/image_config.png" alt="Fichier config.json"
+             style="margin-top: 24px; max-width: 600px; width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid var(--border);" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Gabin</span>
+    <span>BUT Informatique — IUT de Nantes</span>
+  </footer>
+
+</body>
+</html>

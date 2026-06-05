@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cave Escape - Gabin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="accueil.html" class="nav-logo">G<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="#description" class="cta">À propos du projet</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="projet-hero">
+    <div class="projet-hero-title">
+      <div class="hero-eyebrow">Projet personnel - Python</div>
+      <h1 class="hero-name projet-hero-name">Cave<br/><span class="line2">Escape</span></h1>
+    </div>
+    <img src="assets/img/plateforme_base.png" alt="Système de particules de base"
+         style="max-width: 500px; width: 100%; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); border: 1px solid var(--border);" />
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section id="description">
+
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Cave Escape</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="jeu-desc">
+
+      <div class="jeu-block">
+        <h3>Le projet</h3>
+        <p>Cave Escape est un projet personnel développé au lycée en Python avec Pygame. Le joueur incarne un personnage piégé dans une grotte et doit trouver la sortie en traversant des niveaux de plateforme.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Le gameplay</h3>
+        <p>Le jeu repose sur des mécaniques classiques de plateforme : déplacements et saut. L'objectif est d'atteindre la porte de sortie de chaque niveau pour progresser.</p>
+        <img src="assets/img/plateforme_lvl2.png" alt="Système de particules de base"
+         style="max-width: 500px; width: 100%; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); border: 1px solid var(--border);" />
+      </div>
+
+      <div class="jeu-block">
+        <h3>Le système de niveaux - La matrice</h3>
+        <p>La partie la plus intéressante techniquement est la construction des niveaux. Chaque niveau est défini par une matrice de nombres : 0 représente une case vide, 1 de la pierre, 6 la porte de sortie, etc. Le jeu lit cette matrice et instancie les blocs correspondants à chaque position. Ce système permet de créer et modifier des niveaux très facilement sans toucher à la logique du jeu.</p>
+        <img src="assets/img/plateforme_matrice.png" alt="Système de particules de base"
+         style="max-width: 400px; width: 100%; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); border: 1px solid var(--border);" />
+      </div>
+
+      <div class="jeu-block">
+        <h3>Regard actuel</h3>
+        <p>Ce projet a été développé au lycée, avant ma formation en BUT Informatique. Le système de matrice pour la génération de niveaux était je trouve une bonne intuition. Aujourd'hui je structurerais le code différemment, avec une meilleure séparation des responsabilités et une exploitation plus poussée de la POO, notamment avec de l'héritage pour les différents types de blocs et d'entités.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Gabin</span>
+    <span>BUT Informatique - IUT de Nantes</span>
+  </footer>
+
+</body>
+</html>
