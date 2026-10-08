@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flip7 — Gabin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">G<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#projets">Projets</a></li>
+      <li><a href="#description" class="cta">À propos du projet</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="projet-hero">
+    <div class="projet-hero-title">
+      <div class="hero-eyebrow">SAE BUT Informatique - Kotlin</div>
+      <h1 class="hero-name projet-hero-name">Flip<span class="line2">7</span></h1>
+      <div class="tags projet-tags-center">
+        <span class="tag">Kotlin</span>
+        <span class="tag">UML</span>
+        <span class="tag">Tests unitaires</span>
+        <span class="tag">POO</span>
+        <span class="tag">JavaFX</span>
+      </div>
+    </div>
+    <img src="assets/img/flip7/Rendu_Final.png" alt="Rendu final Flip7" class="projet-hero-img" />
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section id="description">
+
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Flip7</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="jeu-desc">
+
+      <div class="jeu-block">
+        <h3>Le projet</h3>
+        <p>Dans le cadre de la SAE 201 de première année de BUT Informatique, nous avons eu pour mission d'analyser, de spécifier et d'implémenter le jeu de cartes Flip7 en Kotlin avec JavaFX. Ce projet de groupe couvrait l'ensemble du cycle de développement : analyse des règles, modélisation UML, maquettage de l'interface et tests unitaires.</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Le jeu - Flip7</h3>
+        <p>Flip7 est un jeu de cartes où les joueurs piochent tour à tour pour accumuler des points. Le premier joueur à atteindre 200 points remporte la partie. Une partie est découpée en manches, chaque manche en tours. À chaque tour, le joueur choisit de piocher ou de s'arrêter - risquer un doublon, c'est perdre toutes ses cartes de la manche. Trois types de cartes composent le jeu : les <strong>CarteNuméro</strong> (valeurs de 0 à 12), les <strong>CarteBonus</strong> (bonus de points ou multiplication du score) et les <strong>CarteSpéciale</strong> (effets sur les autres joueurs : Stop, Trois à la Suite, Seconde Chance).</p>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Livrable 1 - Analyse et modélisation UML</h3>
+        <p>Le premier livrable consistait à analyser les règles du jeu et à produire deux diagrammes de classes UML : un diagramme d'analyse simplifié pour poser les grandes entités, et un diagramme détaillé reflétant fidèlement l'architecture du code. Nous avons modélisé l'ensemble de la hiérarchie de classes - <strong>Carte</strong> comme classe abstraite racine, spécialisée en <strong>CarteNuméro</strong>, <strong>CarteBonus</strong> et <strong>CarteSpéciale</strong> - ainsi que la gestion des paquets avec <strong>Pile</strong> et <strong>Défausse.</strong></p>
+        <div class="particule-images">
+          <img src="assets/img/flip7/analyse.png" alt="Diagramme UML d'analyse" />
+          <img src="assets/img/flip7/detaille.png" alt="Diagramme UML détaillé" />
+        </div>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Livrable 2 - Maquettes de l'interface</h3>
+        <p>Nous avons conçu quatre maquettes représentant les différentes vues de l'application : la page d'accueil, la vue principale de jeu regroupant les cartes des joueurs et la pioche, la page des règles et la vue de fin de partie affichant les scores. Ces maquettes constituent une représentation théorique de l'interface finale.</p>
+        <div class="particule-images">
+          <img src="assets/img/flip7/Maquette_Page_Départ.png" alt="Maquette page d'accueil" />
+          <img src="assets/img/flip7/Maquette_Page_Jeu.png" alt="Maquette page de jeu" />
+        </div>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Livrable 3 - Tests unitaires</h3>
+        <p>Le troisième livrable portait sur la mise en place de tests unitaires. Nous avons utilisé des tables de décision pour identifier les plages de valeurs à tester pour chaque méthode, puis implémenté des tests paramétriques en JUnit avec Kotlin. Cette approche nous a permis de séparer les données de test de leur exécution et de couvrir facilement toutes les partitions de données. Les classes <strong>Carte</strong> présentaient une bonne testabilité grâce à leurs valeurs de retour simples, tandis que la classe <strong>Flip7</strong> était plus complexe à tester en raison de ses nombreux paramètres.</p>
+        <div class="particule-images">
+          <img src="assets/img/flip7/exempletestcartebonus.png" alt="Exemple de test CarteBonusPlus" />
+          <img src="assets/img/flip7/exempletestsequence.png" alt="Exemple de test de séquence" />
+        </div>
+      </div>
+
+      <div class="jeu-block">
+        <h3>Rendu Final</h3>
+        <p>Notre rendu final était légèrement différent de nos maquettes. Nous avons appris à créer des transitions avec JavaFX. Nous étions très satisfait du résultat. Nous avons obtenu une interface fonctionnelle permettant de jouer de façon fluide au jeu flip7.</p>
+        <div class="particule-images">
+          <img src="assets/img/flip7/Rendu_Final.png" alt="Rendu final Flip7" class="projet-hero-img" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Gabin</span>
+    <span>BUT Informatique - IUT de Nantes</span>
+  </footer>
+
+  <script src="lightbox.js"></script>
+</body>
+</html>
