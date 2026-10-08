@@ -494,7 +494,7 @@ section {
 }
 
 .contact-link-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 12px;
   color: var(--text-dim);
   margin-bottom: 2px;
